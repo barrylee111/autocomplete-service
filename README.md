@@ -134,6 +134,8 @@ http://localhost:2345/suggestions?q=London&latitude=43.70011&longitude=-79.4163
 ```
 
 ### Kubernetes (Minikube)
+If you have not installed `kubectl` or `minikube`, you will need to do so to run the cluster. [Kubernetes Documentation](https://kubernetes.io/docs/tasks/tools/)
+
 #### Deploy to Minikube:
 
 ```bash
