@@ -127,8 +127,6 @@ docker build -t autocomplete-service .
 docker run -d -p 2345:2345 autocomplete-service
 ```
 
-**Note:** If you encounter issues pulling the Docker image, ensure you are logged in to Docker Hub. You can log in using `docker login` command and entering your credentials. If you do not have a Docker Hub account, you can create one for free at [Docker Hub](https://hub.docker.com/).
-
 #### Access the API at:
 
 ```bash
@@ -148,6 +146,8 @@ kubectl apply -f service.yaml
 ```bash
 minikube service autocomplete-service
 ```
+
+**Note:** If you encounter issues pulling the Docker image for the Kubernetes build which calls an image from Dockerhub, ensure you are logged in to Docker Hub. You can log in using `docker login` command and entering your credentials. If you do not have a Docker Hub account, you can create one for free at [Docker Hub](https://hub.docker.com/).
 
 ## API Endpoint
 <b>Endpoint</b>: /suggestions
