@@ -149,6 +149,12 @@ kubectl apply -f service.yaml
 minikube service autocomplete-service
 ```
 
+#### Access the Kubernetes cluster at:
+
+```bash
+<minikube_service_URL>:2345/suggestions?q=London&latitude=43.70011&longitude=-79.4163
+```
+
 **Note:** If you encounter issues pulling the Docker image for the Kubernetes build which calls an image from Dockerhub, ensure you are logged in to Docker Hub. You can log in using `docker login` command and entering your credentials. If you do not have a Docker Hub account, you can create one for free at [Docker Hub](https://hub.docker.com/).
 
 ## API Endpoint
