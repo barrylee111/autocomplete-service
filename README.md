@@ -50,9 +50,15 @@ The service is implemented in Python using FastAPI for handling HTTP requests an
 ## Installation
 
 1. Clone the repository:
-
+    
+    SSH
     ```bash
-    git clone <repository-url>
+    git clone git@github.com:barrylee111/buzzsolutions.git
+    cd autocomplete_service
+    ```
+    HTTPS
+    ```bash
+    git clone https://github.com:barrylee111/buzzsolutions.git
     cd autocomplete_service
     ```
 
