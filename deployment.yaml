@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: autocomplete-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: autocomplete-service
+  template:
+    metadata:
+      labels:
+        app: autocomplete-service
+    spec:
+      containers:
+        - name: autocomplete-service
+          image: barrylee111/autocomplete-service:latest
+          ports:
+            - containerPort: 2345
+          env:
+            - name: FASTAPI_URL
+              value: "http://localhost:2345/suggestions"
+            - name: PYTHONPATH
+              value: "/app"

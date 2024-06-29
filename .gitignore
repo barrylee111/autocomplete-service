@@ -1,0 +1,6 @@
+.env
+.pytest_cache
+
+kubectl
+minikube-linux-amd64
+*__pycache__

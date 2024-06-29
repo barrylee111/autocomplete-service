@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  autocomplete_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2345:2345"
+    environment:
+      FASTAPI_URL: http://localhost:2345/suggestions
+      PYTHONPATH: /app
+    command: uvicorn autocomplete_service.server:app --host 0.0.0.0 --port 2345
