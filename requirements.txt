@@ -1,9 +1,7 @@
 annotated-types==0.7.0
 anyio==4.4.0
 async-timeout==4.0.3
-Brotli @ file:///home/conda/feedstock_root/build_artifacts/brotli-split_1695989787169/work
 certifi==2024.6.2
-cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1696001721842/work
 charset-normalizer==3.3.2
 click==8.1.7
 dnspython==2.6.1
@@ -13,12 +11,10 @@ fastapi-cli==0.0.4
 geographiclib==2.0
 geopy==2.4.1
 h11==0.14.0
-h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
 hpack==4.0.0
 httpcore==1.0.5
 httptools==0.6.1
 httpx==0.27.0
-hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
 idna==3.7
 iniconfig==2.0.0
 Jinja2==3.1.4
@@ -30,11 +26,9 @@ orjson==3.10.5
 packaging==24.1
 pandas==2.2.2
 pluggy==1.5.0
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1711811537435/work
 pydantic==2.7.4
 pydantic_core==2.18.4
 Pygments==2.18.0
-PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
 pytest==8.2.2
 pytest-asyncio==0.23.7
 python-dateutil==2.9.0.post0
