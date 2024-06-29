@@ -88,6 +88,11 @@ The service is implemented in Python using FastAPI for handling HTTP requests an
     http://localhost:2345/suggestions?q=London&latitude=43.70011&longitude=-79.4163
     ```
 
+3. Sample cURL cmd:
+    ```bash
+    curl -X GET "http://localhost:2345/suggestions?q=London&latitude=43.70011&longitude=-79.4163"
+    ```
+
 ### Prerequisites:
 - Python 3.12.4 or higher installed
 - Redis Server installed and running
@@ -133,8 +138,20 @@ docker run -d -p 2345:2345 autocomplete-service
 http://localhost:2345/suggestions?q=London&latitude=43.70011&longitude=-79.4163
 ```
 
+#### Sample cURL cmd:
+```bash
+curl -X GET "http://localhost:2345/suggestions?q=London&latitude=43.70011&longitude=-79.4163"
+
+```
+
 ### Kubernetes (Minikube)
 If you have not installed `kubectl` or `minikube`, you will need to do so to run the cluster. [Kubernetes Documentation](https://kubernetes.io/docs/tasks/tools/)
+
+#### Start Minikube:
+
+```bash
+minikube start --kubernetes-version=v1.21.2
+```
 
 #### Deploy to Minikube:
 
@@ -153,6 +170,11 @@ minikube service autocomplete-service
 
 ```bash
 <minikube_service_URL>:2345/suggestions?q=London&latitude=43.70011&longitude=-79.4163
+```
+
+#### Sample cURL cmd:
+```bash
+curl -X GET "<minikube_service_URL>:2345/suggestions?q=London&latitude=43.70011&longitude=-79.4163"
 ```
 
 **Note:** If you encounter issues pulling the Docker image for the Kubernetes build which calls an image from Dockerhub, ensure you are logged in to Docker Hub. You can log in using `docker login` command and entering your credentials. If you do not have a Docker Hub account, you can create one for free at [Docker Hub](https://hub.docker.com/).
